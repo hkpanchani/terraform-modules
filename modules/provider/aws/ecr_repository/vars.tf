@@ -1,4 +1,4 @@
-variable "resource_name" {
+variable "name" {
   description = "Name of our ECR registery"
   # default     = ""
 }
