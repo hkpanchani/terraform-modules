@@ -6,6 +6,10 @@ output "eks_cluster_name" {
   value = "${aws_eks_cluster.main.id}"
 }
 
-output "kubeconfig-certificate-authority-data" {
+output "eks_cluster_certificate_authority_data" {
   value = "${aws_eks_cluster.main.certificate_authority[0].data}"
+}
+
+output "eks_cluster_identity_oidc_issuer"{
+  value = "${aws_eks_cluster.main.identity[0].oidc[0].issuer}"
 }
