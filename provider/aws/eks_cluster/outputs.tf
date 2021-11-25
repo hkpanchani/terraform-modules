@@ -13,3 +13,7 @@ output "eks_cluster_certificate_authority_data" {
 output "eks_cluster_identity_oidc_issuer"{
   value = "${aws_eks_cluster.main.identity[0].oidc[0].issuer}"
 }
+
+output "eks_cluster_arn"{
+  value = "${aws_eks_cluster.main.arn}"
+}
