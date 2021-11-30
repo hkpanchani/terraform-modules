@@ -6,3 +6,4 @@ temp.tf
 terraform.tfstate
 terraform.tfstate.backup
 policies/
+.terraform.tfstate.lock.info

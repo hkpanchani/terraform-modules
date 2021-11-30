@@ -1,8 +1,3 @@
-variable "availability_zone" {
-  description = "availability_zone for RDS instance"
-  # default     = ""
-  type = string
-}
 variable "name" {
   description = "name for RDS paramter group"
   # default     = ""
