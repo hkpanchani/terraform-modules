@@ -1,6 +1,8 @@
-variable "vpc_id" {}
+variable "allocation_id" {}
 
-variable "internet_gateway_tags" {
+variable "subnet_id" {}
+
+variable "tags" {
     type = map(any)
     default = {
         Author : "Terraform"

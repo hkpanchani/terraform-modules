@@ -2,7 +2,7 @@ variable "route_table_id" {}
 
 variable "destination_cidr_block" {}
 
-variable "is_gateway_id" {
+variable "is_gateway" {
   default = false
 }
 
@@ -10,7 +10,7 @@ variable "gateway_id" {
     default = ""
 }
 
-variable "is_nat_gateway_id" {
+variable "is_nat_gateway" {
   default = false
 }
 

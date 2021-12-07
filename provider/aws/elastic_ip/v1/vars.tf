@@ -1,6 +1,4 @@
-variable "vpc_id" {}
-
-variable "route_table_tags" {
+variable "tags" {
     type = map(any)
     default = {
         Author : "Terraform"

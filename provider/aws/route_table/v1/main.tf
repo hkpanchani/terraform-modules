@@ -3,5 +3,5 @@ resource "aws_route_table" "main" {
 
   # route = "${var.route}"
 
-  tags = "${var.route_table_tags}"
+  tags = "${var.tags}"
 }

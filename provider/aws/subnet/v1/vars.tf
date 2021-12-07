@@ -1,14 +1,14 @@
-variable "subnet_cidr" {
+variable "cidr_block" {
   default = "10.0.0.0/20"
 }
 
 variable "vpc_id" {}
 
-variable "subnet_az" {
+variable "availability_zone" {
   default = ""
 }
 
-variable "subnet_tags" {
+variable "tags" {
     type = map(any)
     default = {
         Author : "Terraform"
