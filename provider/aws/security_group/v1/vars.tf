@@ -25,7 +25,7 @@ variable egress_rules {
   default = []
 }
 
-variable "security_group_tags" {
+variable "tags" {
     type = map(any)
     default = {
         Author : "Terraform"

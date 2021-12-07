@@ -25,5 +25,5 @@ resource "aws_security_group" "main" {
     }
   }
 
-  tags = "${var.security_group_tags}"
+  tags = "${var.tags}"
 }
