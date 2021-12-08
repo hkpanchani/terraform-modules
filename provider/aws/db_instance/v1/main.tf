@@ -13,11 +13,11 @@ resource "aws_db_instance" "main" {
   iops                 = var.iops
   storage_type         = "${var.iops}" != null ? "io1" : "gp2"
   # availability_zone     = var.availability_zone
-  max_allocated_storage = var.max_allocated_storage
-  multi_az              = var.multi_az
-  publicly_accessible   = var.publicly_accessible
-  port                  = var.port
-  # db_subnet_group_name = 
+  max_allocated_storage           = var.max_allocated_storage
+  multi_az                        = var.multi_az
+  publicly_accessible             = var.publicly_accessible
+  port                            = var.port
+  db_subnet_group_name            = var.db_subnet_group_name
   copy_tags_to_snapshot           = var.copy_tags_to_snapshot
   performance_insights_enabled    = var.performance_insights_enabled
   monitoring_interval             = var.monitoring_interval

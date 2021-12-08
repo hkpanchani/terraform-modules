@@ -147,3 +147,7 @@ variable "deletion_protection" {
 variable "monitoring_role_arn" {
   
 }
+
+variable "db_subnet_group_name" {
+  default = ""
+}
