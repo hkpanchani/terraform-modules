@@ -3,7 +3,7 @@ module "iam_user" {
   source = "git::https://gitlab+deploy-token-639923:uxxxaC82yQEZqQYqE9kY@gitlab.com/yudiz_devops/terraform-modules.git//provider/aws/iam_user"
   name = "${var.user}"
   tags = {
-      Created_by: "IAM access key"
+      Created_by: "IAM access key module by terraform"
   }
 }
 
