@@ -17,8 +17,8 @@ resource "aws_db_instance" "main" {
   multi_az                        = var.multi_az
   publicly_accessible             = var.publicly_accessible
   port                            = var.port
-  vpc_security_group_ids          = var.vpc_security_group_ids
-  security_group_names            = var.security_group_names
+  db_subnet_group_name            = var.db_subnet_group_name
+  vpc_security_group_ids            = var.vpc_security_group_ids
   copy_tags_to_snapshot           = var.copy_tags_to_snapshot
   performance_insights_enabled    = var.performance_insights_enabled
   monitoring_interval             = var.monitoring_interval
@@ -27,5 +27,5 @@ resource "aws_db_instance" "main" {
   auto_minor_version_upgrade      = var.auto_minor_version_upgrade
   deletion_protection             = var.deletion_protection
   monitoring_role_arn             = var.monitoring_role_arn
-  tags                            = var.tags
+  tags = var.tags
 }
