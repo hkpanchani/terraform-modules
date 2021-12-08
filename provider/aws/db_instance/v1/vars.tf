@@ -152,7 +152,7 @@ variable "db_subnet_group_name" {
   default = ""
 }
 
-variable "security_group_names" {
+variable "vpc_security_group_ids" {
   type = list
   default = []
 }

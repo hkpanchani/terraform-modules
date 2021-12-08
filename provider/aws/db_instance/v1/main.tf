@@ -17,7 +17,7 @@ resource "aws_db_instance" "main" {
   multi_az                        = var.multi_az
   publicly_accessible             = var.publicly_accessible
   port                            = var.port
-  db_subnet_group_name            = var.db_subnet_group_name
+  vpc_security_group_ids          = var.vpc_security_group_ids
   security_group_names            = var.security_group_names
   copy_tags_to_snapshot           = var.copy_tags_to_snapshot
   performance_insights_enabled    = var.performance_insights_enabled
