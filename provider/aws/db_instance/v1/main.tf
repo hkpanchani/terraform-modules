@@ -18,6 +18,7 @@ resource "aws_db_instance" "main" {
   publicly_accessible             = var.publicly_accessible
   port                            = var.port
   db_subnet_group_name            = var.db_subnet_group_name
+  security_group_names            = var.security_group_names
   copy_tags_to_snapshot           = var.copy_tags_to_snapshot
   performance_insights_enabled    = var.performance_insights_enabled
   monitoring_interval             = var.monitoring_interval

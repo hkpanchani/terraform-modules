@@ -151,3 +151,8 @@ variable "monitoring_role_arn" {
 variable "db_subnet_group_name" {
   default = ""
 }
+
+variable "security_group_names" {
+  type = list
+  default = []
+}
