@@ -156,3 +156,10 @@ variable "security_group_names" {
   type = list
   default = []
 }
+
+variable "tags" {
+    type = map(any)
+    default = {
+        Author : "Terraform"
+    }
+}

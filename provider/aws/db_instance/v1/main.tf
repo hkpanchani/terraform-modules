@@ -27,5 +27,5 @@ resource "aws_db_instance" "main" {
   auto_minor_version_upgrade      = var.auto_minor_version_upgrade
   deletion_protection             = var.deletion_protection
   monitoring_role_arn             = var.monitoring_role_arn
-
+  tags                            = var.tags
 }
