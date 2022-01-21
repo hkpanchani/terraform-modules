@@ -1,9 +1,3 @@
-resource "aws_vpc" "main" {
-    cidr_block       = "${var.cidr_block}"
-    
-    tags = "${var.tags}"
-}
-
 resource "aws_wafv2_ip_set" "main" {
   name               = "${var.name}"
   description        = "${var.description}"
