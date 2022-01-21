@@ -1,3 +1,8 @@
+variable "name" {
+}
+
+variable "description" {
+}
 variable "scope" {
     default = "REGIONAL"
 }
