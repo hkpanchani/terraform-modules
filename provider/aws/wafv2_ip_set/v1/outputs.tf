@@ -1,7 +1,3 @@
-output "vpc_id" {
-  value = "${aws_vpc.main.id}"
-}
-
-output "vpc_cidr_block" {
-  value = "${aws_vpc.main.cidr_block}"
+output "wafv2_ip_set_id" {
+  value = "${aws_wafv2_ip_set.main.id}"
 }
